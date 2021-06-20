@@ -1,0 +1,91 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  flex-direction: column;
+}
+.principal-container{
+  width: 852px;
+  height: 450px;
+  display: flex;
+}
+.containers{
+  width: 284px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 14px;
+  line-height: 2;
+  font-family: 'Lexend Deca', sans-serif;
+}
+h2{
+  color: #fff;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 35px;
+  line-height: normal;
+}
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px;
+  border-radius: 15px 0 0 15px;
+}
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+  padding: 40px;
+}
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  padding: 40px;
+  border-radius: 0 15px 15px 0;
+}
+input{
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.button{
+   height: 100px;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+}
+.btn-sedans{
+  color: hsl(31, 77%, 52%);
+}
+.btn-suvs{
+  color: hsl(184, 100%, 22%);
+}
+.btn-luxury{
+  color: hsl(179, 100%, 13%);
+}
+input:hover{
+  background-color: #ddd;
+  cursor: pointer;
+}
+@media only screen and (max-width: 425px){
+  body{
+    height: 100%;
+    width: 425px;
+  }
+  .principal-container{
+    width: 375px;
+    flex-direction: column;
+    height: 1500px;
+  }
+  .containers{
+    width: 300px;
+    height: 500px;
+    padding: 45px;
+    font-size: 17px;
+  }
+  h2{
+    font-size: 50px;
+    line-height: .6;
+  }
+  input{
+    font-size: 17px;
+    width: 150px;
+    height: 45px;
+  }
+}
